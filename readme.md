@@ -10,6 +10,12 @@
 4. `qmk setup`
 5. `qmk clean && qmk compile -kb keychrone/k17_max/iso_encoder/rgb -km via`
 
+### Flashing Firmware
+
+1. Load QMK Toolbox (gui app)
+2. Put keyboard in DFU mode by unplugging the usb cable, holding the `ESC` key and plugging the cable back in again
+3. Select `.bin` file in QMK Toolbox and hit _Flash_
+
 ## Original Sections
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
