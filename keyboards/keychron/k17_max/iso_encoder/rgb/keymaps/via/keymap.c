@@ -17,6 +17,10 @@
 #include QMK_KEYBOARD_H
 #include "keychron_common.h"
 
+#define RESET TO(MAC_BASE)
+#define FN_CAPS LT(_FL, KC_CAPS)
+#define ALT_TAB LALT(KC_TAB)
+
 enum layers{
   MAC_BASE,
   MAC_FN,
@@ -88,9 +92,16 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
 };
 
 // clang-format on
+//
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (!process_record_keychron_common(keycode, record)) {
-        return false;
-    }
-    return true;
+  switch (keycode) {
+    case KC_ENTER:
+      // Play a tone when enter is pressed
+      if (record->event.pressed) {
+        // PLAY_SONG(tone_qwerty);
+      }
+      return true; // Let QMK send the enter press/release events
+    default:
+      return true; // Process all other keycodes normally
+  }
 }
