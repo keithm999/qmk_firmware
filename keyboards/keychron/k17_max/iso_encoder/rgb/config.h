@@ -52,3 +52,6 @@
 #    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 #endif
+
+#define ONESHOT_TAP_TOGGLE 5 /* Taps & holds until tapped again */
+#define ONESHOT_TIMEOUT 5000
