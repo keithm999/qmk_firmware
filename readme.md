@@ -16,6 +16,15 @@
 2. Put keyboard in DFU mode by unplugging the usb cable, holding the `ESC` key and plugging the cable back in again
 3. Select `.bin` file in QMK Toolbox and hit _Flash_
 
+### Todo
+
+- [ ] Create a function that deactivates all layers and sets to layer 0 (layer_move(layer) - Turns specific layer on and
+      all other layers off)
+- [ ] Create a function that unpresses all the modifier keys
+- [ ] Create a function that resets the keyboard by unpressing all modifier keys and deactivating all but layer 0
+- [ ] Create function to toggle nummpad between numbers and F-Keys (layer_invert(function-layer))
+- [ ] Set RGB on select keys to demonstrate which layer(s) are active. e.g. numberpad goes red when in F-Key mode
+
 ## Original Sections
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
