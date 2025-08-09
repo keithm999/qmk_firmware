@@ -58,3 +58,6 @@
 
 // Set this to the number of layers in keyboard.c
 #define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
+// Caps word
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
