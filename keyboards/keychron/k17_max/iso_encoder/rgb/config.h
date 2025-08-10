@@ -49,3 +49,13 @@
 #    define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 
 #endif
+
+// KM Additions
+#define ONESHOT_TAP_TOGGLE 5 /* Taps & holds until tapped again */
+#define ONESHOT_TIMEOUT 5000
+
+// Set this to the number of layers in keyboard.c
+// #define DYNAMIC_KEYMAP_LAYER_COUNT 6            - set this in info.json instead
+
+// Caps word
+#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
